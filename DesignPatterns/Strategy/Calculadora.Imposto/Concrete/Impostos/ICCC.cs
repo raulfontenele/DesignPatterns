@@ -9,7 +9,11 @@ namespace Calculadora.Imposto.Concrete.Impostos
         {
             if (orcamento.Valor() < 1000)
                 return orcamento.Valor() * 5 / 100;
+<<<<<<< HEAD
             else if(orcamento.Valor() <= 3000)
+=======
+            else if(orcamento.Valor() < 3000)
+>>>>>>> c23e02b2ea51aa2c5ac5446ef3a4727f5d857b4d
                 return orcamento.Valor() * 7 / 100;
             else
                 return orcamento.Valor() * 8 / 100 + 30;
