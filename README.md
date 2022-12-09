@@ -7,6 +7,7 @@ Este repositório foi criado com o propósito de estudar os principais padrões 
 #### Ao longo do presente repositório são apresentados os seguintes Design Patterns:
 - [Strategy](#ancora1)
 - [State](#state)
+- [Template Method](#template)
 
 
 ## Padrão State
@@ -34,5 +35,25 @@ Uma conta bancária realiza operações de saque e depósito diferente de acordo
 Uma conta que está negativo, por exemplo, não aceita saques, e depositam apenas 95% do valor total de um depósito efetuado. Uma conta que está com saldo positivo, aceita saques, e o banco deposita 98% do valor do depósito.
 
 Use o State para representar os possíveis estados da conta, e a sua transição de estado. Se uma conta passa a ter saldo positivo, fica com status POSITIVO. Caso contrário, possui saldo NEGATIVO.
+
+</div>
+
+## Template Method
+
+<div id = "template">
+
+### Impostos com templates definidos
+
+Implemente o Template Method para resolver o problema dos impostos.
+
+Implemente os Impostos ICPP e IKCV.
+
+O imposto ICPP é calculado da seguinte forma: caso o valor do orçamento seja menor que 500,00, deve-se cobrar 5%; caso contrário, 7%.
+
+Já o imposto IKCV, caso o valor do orçamento seja maior que 500,00 e algum item tiver valor superior a 100,00, o imposto a ser cobrado é de 10%; caso contrário 6%.
+
+Escreva um método main que testa sua implementação.
+
+Como resposta, forneça o código das classes do Imposto ICPP e IKCV e também da classe do Template, além do método Main.
 
 </div>
