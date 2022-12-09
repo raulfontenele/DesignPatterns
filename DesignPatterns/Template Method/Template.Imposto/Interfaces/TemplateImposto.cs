@@ -11,14 +11,14 @@ namespace Template.Imposto.Interfaces
         public decimal Calcular(IOrcamento orcamento)
         {
             if (CondionalValorMaximo(orcamento))
-                return CalcularValorMaximo(orcamento.Valor());
+                return CalcularValorMaximo(orcamento);
 
-            return CalcularValorMinimo(orcamento.Valor());
+            return CalcularValorMinimo(orcamento);
         } 
         
-        public abstract bool CondionalValorMaximo(IOrcamento orcamento);
-        public abstract decimal CalcularValorMaximo(decimal valor);
-        public abstract decimal CalcularValorMinimo(decimal valor);
+        protected abstract bool CondionalValorMaximo(IOrcamento orcamento);
+        protected abstract decimal CalcularValorMaximo(IOrcamento orcamento);
+        protected abstract decimal CalcularValorMinimo(IOrcamento orcamento);
 
     }
 }

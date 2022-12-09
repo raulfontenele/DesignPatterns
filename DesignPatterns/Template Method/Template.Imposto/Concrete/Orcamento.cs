@@ -14,6 +14,7 @@ namespace Template.Imposto.Concrete
         public bool AdicionarItem(Item item)
         {
             _itens.Add(item);
+            _valor += item.Valor;
             return true;
         }
 

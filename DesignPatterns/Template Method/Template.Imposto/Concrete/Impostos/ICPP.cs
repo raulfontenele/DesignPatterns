@@ -8,17 +8,17 @@ namespace Template.Imposto.Concrete.Impostos
         private readonly int MAXIMOPERCENTUAL = 7;
         private readonly int MINIMOPERCENTUAL = 5;
 
-        public override decimal CalcularValorMaximo(decimal valor)
+        protected override decimal CalcularValorMaximo(IOrcamento orcamento)
         {
-            return valor * MAXIMOPERCENTUAL / 100;
+            return orcamento.Valor() * MAXIMOPERCENTUAL / 100;
         }
 
-        public override decimal CalcularValorMinimo(decimal valor)
+        protected override decimal CalcularValorMinimo(IOrcamento orcamento)
         {
-            return valor * MINIMOPERCENTUAL / 100;
+            return orcamento.Valor() * MINIMOPERCENTUAL / 100;
         }
 
-        public override bool CondionalValorMaximo(IOrcamento orcamento)
+        protected override bool CondionalValorMaximo(IOrcamento orcamento)
         {
             return orcamento.Valor() >= 500;
         }
