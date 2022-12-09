@@ -56,4 +56,8 @@ Escreva um método main que testa sua implementação.
 
 Como resposta, forneça o código das classes do Imposto ICPP e IKCV e também da classe do Template, além do método Main.
 
+Crie o imposto IHIT, que tem a seguinte regra: caso existam 2 ítens com o mesmo nome, o imposto deve ser de 13% mais R$100,00.
+
+Caso contrário, o valor do imposto deverá ser (1% * o número de ítens no orçamento).
+
 </div>
