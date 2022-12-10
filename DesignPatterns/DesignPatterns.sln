@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Template Method", "Template
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Template.Imposto", "Template Method\Template.Imposto\Template.Imposto.csproj", "{6364CC5C-9FCC-4E8C-8A02-D6AE7D1A1979}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Template.Relatorio", "Template Method\Template.Relatorio\Template.Relatorio.csproj", "{68A3C011-D87B-45AF-895D-64D03F371E4F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{6364CC5C-9FCC-4E8C-8A02-D6AE7D1A1979}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6364CC5C-9FCC-4E8C-8A02-D6AE7D1A1979}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6364CC5C-9FCC-4E8C-8A02-D6AE7D1A1979}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68A3C011-D87B-45AF-895D-64D03F371E4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68A3C011-D87B-45AF-895D-64D03F371E4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68A3C011-D87B-45AF-895D-64D03F371E4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68A3C011-D87B-45AF-895D-64D03F371E4F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{8357E06B-1C01-43F6-9907-295A282D3DD6} = {CE9B2D16-2E29-4242-B9D4-D8C1B9152366}
 		{76B98295-067D-42BB-9121-842377D404C4} = {7142CC41-F6C0-412E-B996-6ECBD30BCEC7}
 		{6364CC5C-9FCC-4E8C-8A02-D6AE7D1A1979} = {2D5EC330-BA20-4ADA-AB08-617BD4EA4819}
+		{68A3C011-D87B-45AF-895D-64D03F371E4F} = {2D5EC330-BA20-4ADA-AB08-617BD4EA4819}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17F972B7-676C-4561-834F-1912560E7D1C}
