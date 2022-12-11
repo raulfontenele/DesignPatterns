@@ -16,8 +16,10 @@ namespace Calculadora.Descontos.Concrete
         {
             DescontoMaisCincoItens d1 = new();
             DescontoMaiorQuinhetos d2 = new();
+            DescontoVendaCasada d3 = new();
 
             d1.Proximo = d2;
+            d2.Proximo = d3;
 
             return d1.Desconta(_orcamento);
 
