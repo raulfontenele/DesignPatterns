@@ -38,12 +38,17 @@ namespace Construtor.NotaFiscal.Domain
             return this;
         }
 
-        public NotaFiscalBuilder NaDataAtual()
+        public NotaFiscalBuilder NaData()
         {
             this.DataEmissao = DateTime.Now;
             return this;
         }
-        
+        public NotaFiscalBuilder NaData(DateTime datetime)
+        {
+            this.DataEmissao = datetime;
+            return this;
+        }
+
         public NotaFiscalBuilder ComItem(Item item)
         {
             TodosItens.Add(item);

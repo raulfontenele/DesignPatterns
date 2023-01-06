@@ -6,7 +6,7 @@ NotaFiscal nf = new NotaFiscalBuilder().ParaEmpresa("Caelum")
                           .ComItem(new Item("item 2", 200.0))
                           .ComItem(new Item("item 3", 300.0))
                           .ComObservacoes("entregar nf pessoalmente")
-                          .NaDataAtual()
+                          .NaData()
                           .Constroi();
 
 Console.WriteLine($"O valor total da nota fiscal é de R$ {nf.ValorBruto}");
