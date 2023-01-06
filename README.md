@@ -8,6 +8,7 @@ Este repositório foi criado com o propósito de estudar os principais padrões 
 - [Strategy](#strategy)
 - [State](#state)
 - [Template Method](#template)
+- [Builder](#builder)
 
 ## Padrão Strategy
 <div id = "strategy">
@@ -24,9 +25,9 @@ Crie a classe RealizadorDeInvestimentos que recebe uma estratégia de investimen
 
 Os possíveis tipos de investimento são:
 
-"CONSERVADOR", que sempre retorna 0.8% do valor investido;
-"MODERADO", que tem 50% de chances de retornar 2.5%, e 50% de chances de retornar 0.7%;
-"ARROJADO", que tem 20% de chances de retornar 5%, 30% de chances de retornar 3%, e 50% de chances de retornar 0.6%.
+- "CONSERVADOR", que sempre retorna 0.8% do valor investido;
+- "MODERADO", que tem 50% de chances de retornar 2.5%, e 50% de chances de retornar 0.7%;
+- "ARROJADO", que tem 20% de chances de retornar 5%, 30% de chances de retornar 3%, e 50% de chances de retornar 0.6%.
 
 </div>
 
@@ -89,5 +90,21 @@ As diferenças são sutis: relatórios simples possuem cabeçalhos e rodapés de
 Além disso, dada uma lista de contas, um relatório simples apenas imprime titular e saldo da conta. O relatório complexo exibe titular, agência, número da conta, e saldo.
 
 Use Template Method, e implemente o mecânismo de relatórios. Use dados falsos para os dados do banco.
+
+</div>
+
+## Builder
+<div id = "builder">
+
+### Criação de notas fiscais
+A classe NotaFiscal tem razão social (String), CNPJ (String), valor bruto (double), impostos (double), data de emissao (DateTime), e observações (String).
+
+A classe ItemDaNota tem descrição (String) e valor (double).
+
+Adicione a classe NotaFiscal uma List de ItemDaNota, os itens.
+
+Crie construtores para as duas classes. O construtor deve receber todos os atributos.
+
+Implemente um Builder para essa classe NotaFiscal, parecido com a da explicação acima. Faça com que ele tenha uma interface fluente também, para ficar mais legível.
 
 </div>
