@@ -107,4 +107,16 @@ Crie construtores para as duas classes. O construtor deve receber todos os atrib
 
 Implemente um Builder para essa classe NotaFiscal, parecido com a da explicação acima. Faça com que ele tenha uma interface fluente também, para ficar mais legível.
 
-</div>
+</div></div>
+
+
+## Observer
+
+### Notificações após a criação de notas fiscais
+Após a geração de uma nota fiscal, devemos enviá-la por e-mail, e persisti-la no banco de dados.
+
+Implemente um Observer na classe NotaFiscalBuilder que, após a geração da nota, o mesmo disparará as ações.
+
+O código que envia por e-mail e persiste na base de dados deve ser falso. Ou seja, faça um simples Console.WriteLine() com uma mensagem qualquer.
+
+Implemente mais uma ação que deve ser executada depois da geração da nota. A mesma deve imprimir o valor da nota multiplicado por um número que você deseja.
