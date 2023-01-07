@@ -9,7 +9,6 @@ namespace Cadeia.Tipos.Requisicoes.Interfaces
     public interface IConta
     {
         string Nome { get; }
-        string CPF { get; }
-        string Telefone { get; }
+        decimal Saldo { get; }
     }
 }
