@@ -11,6 +11,7 @@ Este repositório foi criado com o propósito de estudar os principais padrões 
 - [Builder](#builder)
 - [Observer](#observer)
 - [Chain of Responsability](#chain)
+- [Decorator](#decorator)
 
 ## Padrão Strategy
 <div id = "strategy">
@@ -139,4 +140,21 @@ Se a aplicação solicitar uma Conta, cujos atributos são separados por ponto-e
 Implemente um Chain of Responsibility onde, dada uma requisição e uma conta bancária, ela passeia por toda a corrente até encontrar a classe que deve processar a requisição de acordo com o formato solicitado, e imprime na tela a conta bancária no formato correto.
 
 Imagine que a classe Requisição possui uma propriedade chamada Formato, que responde "XML", "CSV", ou "PORCENTO", indicando qual tratamento adequado. Uma Conta possui apenas saldo e nome do titular.
+</div>
+
+## Decorator
+
+<div id = "decorator">
+
+
+### Problema dos filtro de conta
+
+Ao identificar contas que possam ser fraudulentas, um banco possui uma série de filtros que devem ser aplicados sobre uma lista de contas.
+
+- Contas com saldo menor que 100 reais ou
+- Contas com saldo maior do que 500 mil reais, ou
+- Contas com data de abertura no mês corrente Todas essas são geralmente selecionadas para uma análise mais detalhada.
+
+Usando Decorators, implemente esse conjunto de filtros e faça com que, ao receber uma lista, o decorator devolva uma nova lista com as contas que atendam a pelo menos um dos critérios acima. Isto é, queremos que o Filtro tenha pelo menos o método de filtragem de contas:
+
 </div>
