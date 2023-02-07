@@ -15,7 +15,7 @@ namespace Cadeia.Tipos.Requisicoes.Domain.TiposRequisicao
         public string Processar(IConta conta, Requisicao requisicao)
         {
             if (requisicao.Formato.Equals(Formato.CSV))
-                return $"{conta.Nome},{conta.Telefone},{conta.CPF}";
+                return $"{conta.Nome},{conta.Saldo}";
 
             return _proximo != null ? _proximo.Processar(conta, requisicao) : "";
         }

@@ -16,8 +16,7 @@ namespace Cadeia.Tipos.Requisicoes.Domain.TiposRequisicao
             if(requisicao.Formato.Equals(Formato.XML))
                 return $"<requisicao>" +
                     $"<nome>{conta.Nome}</nome>" +
-                    $"<telefone>{conta.Telefone}</telefone>" +
-                    $"<cpf>{conta.CPF}</cpf>" +
+                    $"<saldo>{conta.Saldo}</saldo>" +
                     $"</requisicao>";
             
             return _proximo != null ? _proximo.Processar(conta, requisicao) : "";
