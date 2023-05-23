@@ -8,6 +8,6 @@ namespace Calculadora.Interfaces
 {
     internal interface IExpressao
     {
-        public int Avalia();
+        public double Avalia();
     }
 }

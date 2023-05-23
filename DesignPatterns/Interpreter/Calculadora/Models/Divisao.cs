@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Calculadora.Models
 {
-    internal class Multiplicacao : IExpressao
+    internal class Divisao : IExpressao
     {
         private IExpressao _esquerda;
         private IExpressao _direita;
 
-        public Multiplicacao(IExpressao esquerda, IExpressao direita)
+        public Divisao(IExpressao esquerda, IExpressao direita)
         {
             _esquerda = esquerda;
             _direita = direita;
@@ -20,7 +20,7 @@ namespace Calculadora.Models
 
         public double Avalia()
         {
-            return _esquerda.Avalia() * _direita.Avalia();
+            return _esquerda.Avalia() / _direita.Avalia();
         }
     }
 }

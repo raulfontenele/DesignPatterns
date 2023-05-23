@@ -1,24 +1,26 @@
 ﻿using Calculadora.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Calculadora.Models
 {
-    internal class Numero : IExpressao
+    internal class RaizQuadrada : IExpressao
     {
-        private int _numero;
+        private IExpressao _numero;
 
-        public Numero(int numero)
+        public RaizQuadrada(IExpressao valor)
         {
-            _numero = numero;
+            _numero = valor;
         }
 
         public double Avalia()
         {
-            return _numero;
+            return Math.Sqrt((double)_numero.Avalia());
+
         }
     }
 }

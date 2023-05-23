@@ -18,7 +18,7 @@ namespace Calculadora.Models
             _direita = direita;
         }
 
-        public int Avalia()
+        public double Avalia()
         {
             return _esquerda.Avalia() - _direita.Avalia();
         }
